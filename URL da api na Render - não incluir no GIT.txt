@@ -1,4 +1,6 @@
-URL https://api-data-hora-brasilia.onrender.com
+Render: https://api-data-hora-brasilia.onrender.com
+
+Railway: api-data-hora-brasilia-production.up.railway.app
 
 para testar:
 
