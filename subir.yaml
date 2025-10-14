@@ -1,0 +1,16 @@
+
+---
+
+### 5️⃣ Como subir na Railway
+
+1. Crie o repositório no GitHub e envie esses arquivos.  
+2. No Railway: **New Project → Deploy from GitHub**.  
+3. Selecione o repositório.  
+4. Configure **start command**:
+5. Clique em **Deploy** e pronto!  
+
+---
+
+Se você quiser, posso gerar **um link de template GitHub pronto**, que você só precisa **clonar e já subir na Railway**, sem precisar criar nada manualmente.  
+
+Quer que eu faça isso agora?
