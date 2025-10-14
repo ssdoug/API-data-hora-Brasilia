@@ -1,0 +1,6 @@
+URL https://api-data-hora-brasilia.onrender.com
+
+para testar:
+
+inserir "/" -> mostra uma mensagem de boas vindas
+inserir "/hora" -> mostra a hora de Brasília
