@@ -1,6 +1,6 @@
 Render: https://api-data-hora-brasilia.onrender.com
 
-Railway: api-data-hora-brasilia-production.up.railway.app
+Railway: https://api-data-hora-brasilia-production.up.railway.app
 
 para testar:
 
