@@ -20,4 +20,4 @@ def get_brasilia_time_full():
     return {"Bem-vindo à API Hora de Brasília! Atual:": data_hora}
 
 def get_test():
-    return {"data_hora_brasilia": "01-01-2021 00:00:00"}
+    return {"data_hora_brasilia": "Funcionou o método!"}
