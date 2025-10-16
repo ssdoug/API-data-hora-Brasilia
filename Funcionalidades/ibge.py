@@ -42,7 +42,8 @@ def get_populacao_uf(uf_codigo: str):
             "uf": uf_codigo,
             "indicador": "populacao_estimada",
             "ano": ano,
-            "valor": valor
+            "valor": df.iloc[0]['Valor' if 'Valor' in df.columns else df.columns[-1]],
+            "unidade": "habitantes"
         }
 
     except Exception as e:
