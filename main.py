@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from datetime import datetime
 from fastapi.middleware.cors import CORSMiddleware
-import pytz
-from Funcionalidades import dtahora
+from Funcionalidades import dtahora, ibge
 
 app = FastAPI(title="API Hora de Brasília")
 
@@ -30,3 +29,8 @@ def read_full():
 @app.get("/test")
 def get_teste():
     return dtahora.get_test()
+
+
+@app.get("/pop/{uf_codigo}")
+def get_populacao_uf(uf_codigo: str):
+    return ibge.get_populacao_uf(uf_codigo)
