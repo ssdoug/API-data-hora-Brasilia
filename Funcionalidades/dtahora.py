@@ -20,4 +20,4 @@ def get_brasilia_time_full():
     return {"data_hora_brasilia": f"Teste {data_hora}"}
 
 def get_test():
-    return {"data_hora_brasilia": "vamos trabalhar essa API, pessoal!!"}
+    return {"data_hora_brasilia": "Vamos trabalhar essa API, pessoal!!"}
