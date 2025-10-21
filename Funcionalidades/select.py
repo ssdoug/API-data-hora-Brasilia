@@ -24,4 +24,4 @@ def get_dados_mysql():
     except Exception as e:
         return {"status": "erro","mensagem": f"{str(e)}"}
     
-print(get_dados_mysql())
+#print(get_dados_mysql())
