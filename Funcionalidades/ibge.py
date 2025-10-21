@@ -1,6 +1,5 @@
 from fastapi import HTTPException
 from datetime import datetime
-import pytz
 import sidrapy  # biblioteca para consultas SIDRA
 
 
@@ -48,3 +47,4 @@ def get_populacao_uf(uf_codigo: str):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Erro ao consultar SIDRA: {str(e)}")
+

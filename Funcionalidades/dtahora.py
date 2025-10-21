@@ -20,13 +20,4 @@ def get_brasilia_time_full():
     return {"data_hora_brasilia": f"Teste {data_hora}"}
 
 def get_test():
-    #return {"data_hora_brasilia": "Vamos trabalhar essa API, pessoal!!"}
-
-
-        return {
-            "uf": "SP",
-            "indicador": "populacao_estimada",
-            "ano": "2025",
-            "valor": "999",
-            "unidade": "habitantes"
-        }
+    return {"data_hora_brasilia": "Vamos trabalhar essa API, pessoal!!"}
