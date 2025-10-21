@@ -3,3 +3,4 @@ uvicorn
 pytz
 sidrapy
 pandas
+mysql

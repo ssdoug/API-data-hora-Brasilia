@@ -14,6 +14,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# api ENDPOINT: https://api-data-hora-brasilia-production.up.railway.app/test
+
 @app.get("/")
 def read_root_():
     return dtahora.read_root()
