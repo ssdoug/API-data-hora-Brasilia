@@ -1,27 +1,44 @@
 import mysql.connector
 
-
-# --- Função 3: SELECT no MySQL ---
 def get_dados_mysql():
     try:
-        # 🔧 Ajuste suas credenciais abaixo
+        # 🔧 Ajuste suas credenciais de conexão
         conexao = mysql.connector.connect(
             host="SRVORACLEBR59.CITELSOFTWARE.COM.BR",
             user="converte_realindustria",
             password="converte13347",
             database="CONVERTE",
-            port="59007"
+            port=59007  # o parâmetro deve ser inteiro, não string
         )
 
         cursor = conexao.cursor(dictionary=True)
-        cursor.execute("SELECT ITE_DESITE FROM CADITE WHERE ITE_CODITE = '00810';")
+        query = "SELECT ITE_DESITE FROM CADITE WHERE ITE_CODITE = %s;"
+        cursor.execute(query, ('00810',))  # evita SQL injection e melhora performance
         resultado = cursor.fetchall()
 
         cursor.close()
         conexao.close()
 
-        return {"status": "ok", "resultado": f"{resultado}"}
-    except Exception as e:
-        return {"status": "erro","mensagem": f"resultado da query: {str(e)}"}
+        #retorna resultado legível
+        return {
+            "status": "ok",
+            "resultado": resultado  # já vem como lista de dicionários
+        }
     
-#print(get_dados_mysql())
+#    except mysql.connector.Error as err:
+ #       return {
+  #          "status": "erro",
+   #         "mensagem": f"Erro no MySQL: {err}"
+    #    }
+     #   return {"status": "ok", "resultado": f"{resultado}"}
+
+    except Exception as e:
+       return {"status": "erro","mensagem": f"resultado da query: {str(e)}"}
+    
+
+
+#    except Exception as e:
+#        return {
+#            "status": "erro",
+#            "mensagem": f"Erro geral: {str(e)}"
+#        }
