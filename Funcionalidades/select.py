@@ -22,6 +22,6 @@ def get_dados_mysql():
 
         return {"status": "ok", "resultado": f"{resultado}"}
     except Exception as e:
-        return {"status": "erro","mensagem": f"{str(e)}"}
+        return {"status": "erro","mensagem": f"resultado da query: {str(e)}"}
     
 #print(get_dados_mysql())
