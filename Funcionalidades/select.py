@@ -6,7 +6,7 @@ def get_dados_mysql():
     try:
         # 🔧 Ajuste suas credenciais abaixo
         conexao = mysql.connector.connect(
-            host="srvoraclebr59.citelsoftware.com.br",
+            host="SRVORACLEBR59.CITELSOFTWARE.COM.BR",
             user="converte_realindustria",
             password="converte13347",
             database="CONVERTE",
@@ -23,3 +23,5 @@ def get_dados_mysql():
         return {"status": "ok", "resultado": f"{resultado}"}
     except Exception as e:
         return {"status": "erro","mensagem": f"{str(e)}"}
+    
+print(get_dados_mysql())
