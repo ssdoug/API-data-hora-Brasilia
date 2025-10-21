@@ -6,7 +6,7 @@ def get_dados_mysql():
     try:
         # 🔧 Ajuste suas credenciais abaixo
         conexao = mysql.connector.connect(
-            host="SRVORACLEBR59.CITELSOFTWARE.COM.BR",
+            host="SRVORACLEBR59.CITELSOFTWARE.COM.BR:59007",
             user="converte_realindustria",
             password="converte13347",
             database="CONVERTE"
