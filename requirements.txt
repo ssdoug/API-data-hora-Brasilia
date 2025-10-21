@@ -3,4 +3,4 @@ uvicorn
 pytz
 sidrapy
 pandas
-mysql
+mysql.connector-python
