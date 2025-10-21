@@ -13,7 +13,7 @@ def get_dados_mysql():
         )
 
         cursor = conexao.cursor(dictionary=True)
-        cursor.execute("SELECT nome, valor FROM tabela_exemplo LIMIT 5;")
+        cursor.execute("SELECT ITE_DESITE FROM CADITE WHERE ITE_CODITE = '00810';")
         resultado = cursor.fetchall()
 
         cursor.close()
