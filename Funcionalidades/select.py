@@ -9,7 +9,7 @@ def get_dados_mysql():
             host="https://SRVORACLEBR59.CITELSOFTWARE.COM.BR",
             user="converte_realindustria",
             password="converte13347",
-            database="CONVERTE"
+            database="CONVERTE",
             port="59007"
         )
 
